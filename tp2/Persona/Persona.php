@@ -18,47 +18,47 @@ class Persona
     }
 
 
-    public function getNombre() : string
+    public function getNombre() 
     {
         return $this->nombre;
     }
 
-    public function getApellido() : string
+    public function getApellido() 
     {
         return $this->apellido;
     }
 
-    public function getTipoDni() : string
+    public function getTipoDni() 
     {
         return $this->tipoDni;
     }
 
-    public function getNroDni() : int
+    public function getNroDni() 
     {
         return $this->nroDni;
     }   
 
-    public function setNombre($nombre) : void
+    public function setNombre($nombre) 
     {
         $this->nombre = $nombre;
     }
 
-    public function setApellido($apellido) : void
+    public function setApellido($apellido)
     {
         $this->apellido = $apellido;
     }
 
-    public function setTipoDni($tipoDni) : void
+    public function setTipoDni($tipoDni) 
     {
         $this->tipoDni = $tipoDni;
     }   
 
-    public function setNroDni($nroDni) : void
+    public function setNroDni($nroDni) 
     {
         $this->nroDni = $nroDni;
     }
 
-    public function __toString() : string
+    public function __toString() 
     {
         return $this->getNombre() . " " . $this->getApellido() . " " . $this->getTipoDni() . " " . $this->getNroDni();
     }

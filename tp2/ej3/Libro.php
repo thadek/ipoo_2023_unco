@@ -3,15 +3,15 @@
 
 class Libro {
 
-    private string $isbn;
-    private string $titulo;
-    private int $anioEdicion;
-    private string $editorial;
-    private Persona $autor;
-    private int $cantidadPaginas;
-    private string $sinopsis;
+    private $isbn;
+    private $titulo;
+    private $anioEdicion;
+    private $editorial;
+    private $autor;
+    private $cantidadPaginas;
+    private $sinopsis;
 
-    public function __construct(string $isbn, string $titulo, int $anioEdicion, string $editorial, Persona $autor, int $cantidadPaginas, string $sinopsis)
+    public function __construct( $isbn, $titulo, $anioEdicion,  $editorial,  $autor,  $cantidadPaginas,  $sinopsis)
     {
         $this->isbn = $isbn;
         $this->titulo = $titulo;
@@ -24,72 +24,72 @@ class Libro {
    
 
 
-    public function getIsbn(): string
+    public function getIsbn()
     {
         return $this->isbn;
     }
 
-    public function getTitulo(): string
+    public function getTitulo()
     {
         return $this->titulo;
     }
 
-    public function getAnioEdicion(): int
+    public function getAnioEdicion()
     {
         return $this->anioEdicion;
     }
 
-    public function getEditorial(): string
+    public function getEditorial()
     {
         return $this->editorial;
     }
 
-    public function getAutor(): Persona
+    public function getAutor()
     {
         return $this->autor;
     }
 
-    public function getCantidadPaginas(): int
+    public function getCantidadPaginas()
     {
         return $this->cantidadPaginas;
     }
 
-    public function getSinopsis(): string
+    public function getSinopsis()
     {
         return $this->sinopsis;
     }
 
-    public function setIsbn(string $isbn): void
+    public function setIsbn(string $isbn)
     {
         $this->isbn = $isbn;
     }
 
-    public function setTitulo(string $titulo): void
+    public function setTitulo(string $titulo)
     {
         $this->titulo = $titulo;
     }
 
-    public function setAnioEdicion(int $anioEdicion): void
+    public function setAnioEdicion(int $anioEdicion)
     {
         $this->anioEdicion = $anioEdicion;
     }
 
-    public function setEditorial(string $editorial): void
+    public function setEditorial(string $editorial)
     {
         $this->editorial = $editorial;
     }
 
-    public function setAutor(Persona $autor): void
+    public function setAutor(Persona $autor)
     {
         $this->autor = $autor;
     }
 
-    public function setCantidadPaginas(int $cantidadPaginas): void
+    public function setCantidadPaginas(int $cantidadPaginas)
     {
         $this->cantidadPaginas = $cantidadPaginas;
     }
 
-    public function setSinopsis(string $sinopsis): void
+    public function setSinopsis(string $sinopsis)
     {
         $this->sinopsis = $sinopsis;
     }
@@ -104,7 +104,7 @@ class Libro {
 
 
 
-    public function __toString(): string
+    public function __toString()
     {
         return "Libro: " . $this->getTitulo() . " - " . $this->getAutor() . " - " . $this->getEditorial() . " - " . $this->getAnioEdicion() . " - " . $this->getIsbn() . " - " . $this->getCantidadPaginas() . " - " . $this->getSinopsis();
     }

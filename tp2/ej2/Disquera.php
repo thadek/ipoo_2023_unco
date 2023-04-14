@@ -3,16 +3,14 @@
 require_once '../Persona/Persona.php';
 
 
-
-
 class Disquera
 {
 
-    private DateTime $hora_desde;
-    private DateTime $hora_hasta;
-    private string $estado;
-    private string $direccion;
-    private Persona $duenio;
+    private  $hora_desde;
+    private  $hora_hasta;
+    private  $estado;
+    private  $direccion;
+    private  $duenio;
 
 
     public function __construct($hora_desde, $hora_hasta, $estado, $direccion, $duenio)
@@ -25,11 +23,12 @@ class Disquera
     }
 
 
-    public function getHoraDesde(): DateTime{
+    public function getHoraDesde()
+    {
         return $this->hora_desde;
     }
 
-    public function getHoraHasta() : DateTime
+    public function getHoraHasta() 
     {
         return $this->hora_hasta;
     }
@@ -49,12 +48,12 @@ class Disquera
         return $this->duenio;
     }
 
-    public function setHoraDesde(DateTime $hora_desde)
+    public function setHoraDesde($hora_desde)
     {
         $this->hora_desde = $hora_desde;
     }
 
-    public function setHoraHasta(DateTime $hora_hasta)
+    public function setHoraHasta($hora_hasta)
     {
         $this->hora_hasta = $hora_hasta;
     }

@@ -1,14 +1,13 @@
 <?php
-declare(strict_types=1);
 require_once '../Persona/Persona.php';
 
 
 class CuentaBancaria {
 
-    private int $nroCuenta;
-    private Persona $persona;
-    private float $saldoActual;
-    private float $interesAnual;
+    private $nroCuenta;
+    private $persona;
+    private $saldoActual;
+    private $interesAnual;
 
 
     /**
