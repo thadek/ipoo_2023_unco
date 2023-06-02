@@ -9,7 +9,7 @@ class Empresa {
     private $viajes;
 
     public function __construct($nombre, $viajes = []) {
-        $this->id = $this->contador;
+        $this->id = self::$contador;
         $this->nombre = $nombre;
         $this->viajes = $viajes;
         self::$contador++;
@@ -75,6 +75,14 @@ class Empresa {
         return $viaje->calcularImporteViaje();
     }
 
+
+    public function __toString()
+    {
+        $string = "Id: " . $this->getId() . "\n";
+        $string .= "Nombre: " . $this->getNombre() . "\n";
+        $string .= "Viajes: " . $this->verViajes() . "\n";
+        return $string;
+    }
 
 
 }

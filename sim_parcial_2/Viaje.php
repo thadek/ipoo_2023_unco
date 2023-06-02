@@ -115,7 +115,7 @@ class Viaje {
 
     public function calcularImporteViaje(){
         $asientosVendidos = $this->getCantidadAsientosTot() - $this->getCantidadAsientosDisp();
-        return $this->getMontoBase()*($this->getMontoBase()*$asientosVendidos/$this->getCantidadAsientosTot());
+        return $this->getMontoBase()+($this->getMontoBase()*$asientosVendidos/$this->getCantidadAsientosTot());
     }
 
 

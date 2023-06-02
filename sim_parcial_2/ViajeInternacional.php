@@ -41,7 +41,7 @@ class ViajeInternacional extends Viaje {
     public function __toString()
     {
         $string = parent::__toString();
-        $string .= "Requiere doc adicional: " . $this->getRequiereDocAdicional() . "\n";
+        $string .= "Requiere doc adicional: " . ($this->getRequiereDocAdicional()? "SI": "NO") . "\n";
         $string .= "Porcentaje impuesto: " . $this->getPorcentajeImpuesto() . "\n";
         return $string;
     }
